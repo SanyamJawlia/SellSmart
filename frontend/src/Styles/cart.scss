@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Overpass:wght@400;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto" , sans-serif;
+    text-decoration: none;
+}
+
+.cart{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    background-color: #c7f9cc;
+
+    >main{
+        padding: 2rem;
+        overflow-y: auto;
+        margin: 1rem;
+        background-color:#50A060;
+        border-radius: 10px;
+        
+    }
+    
+    >h1{
+        color: white;
+        font: 100 2rem "Roboto";
+    }
+
+    >aside{
+        height: 70vh;
+        margin: 1rem;
+        padding: 1rem;
+        margin-left: 0;
+        border-radius: 10px;
+        background-color: #50A060;
+        color: black;
+        
+        box-shadow: -10px 0 10px rgba(0,0,0,0.182);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        >h2{
+            margin: 0.5rem;
+            font: 400 1.5rem "Roboto";
+            letter-spacing: 2px;
+
+            &:last-of-type{
+                font-weight: 600;
+            }
+        }
+        >button{
+            width: 150px;
+            height: 35px;
+            border-radius: 8px;
+            box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: white;
+            border: none;
+            outline: none;
+            background-color: #1b4332;
+            margin-top: 3rem;
+            margin-left: auto;
+            margin-right: auto;
+            transition: all 0.5s ease;
+            &:hover{
+                transform: scale(1.05);
+                background-color: #2d6950;
+            }
+            >a{
+                color: white;
+            }
+        }
+
+
+    }
+}
+
+.cartItem{
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+    margin: 1rem 0 ;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    
+    img{
+        width: 100%;
+        height: 200px;
+    }
+
+    >article{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        >h3{
+            font-size: 1.5rem;
+            margin: 0.5rem;
+        }
+        >p{
+            font-size: 1.2rem;
+            margin: 0.5rem;
+        }
+    }
+
+
+    >div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+         
+        button{
+            width: 30px;
+            height: 30px;
+            border: none;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover{
+                background-color: black;
+            }
+        }
+
+        p{
+            width: 30px;
+            height: 30px;
+            display: grid;
+            place-items: center;
+        }
+    }
+
+    >svg{
+        cursor: pointer;
+        font-size: 1.5rem;
+        display: inline-block;
+        margin: auto;
+
+        &:hover{
+            color: orange;
+        }
+    }
+}
+
+@media screen and (max-width:950px) {
+    .cart{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // grid-template-columns: 1fr 1.5fr 1fr 0.3fr;
+        >main{
+            height: 200vh;
+        }
+
+        >aside{
+            height: 40vh;
+            margin: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width:670px){
+    
+    .cartItem{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        // >img{
+        //     // width: 60%;
+        // }
+
+        >article{
+            margin: 1rem;
+        }
+
+        >div{
+            margin: 1rem;
+            margin-top: 0;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Overpass:wght@400;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+#dashboard{
+    width: 100%;
+    background-color: #c7f9cc;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    >h1{
+        font: 600 3rem "Roboto";
+        color: #006400;
+        margin: 2rem 0;
+    }
+    p{
+        font-size: 1.1rem;
+        font-weight: 400;
+        word-spacing: 5px;
+    }
+
+    .details{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        >div{
+            height: 150px;
+            width: 150px;
+            background: linear-gradient(#1fa2ff,#12d8fa,#a6ffcb);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 4px 4px 8px #333;
+            margin: 1rem;
+
+            h2{
+                font-size: 1.7rem;
+            }
+            p{
+                font-size: 1.4rem;
+                font-weight: 500;
+            }
+        }
+    }
+
+}

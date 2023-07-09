@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Overpass:wght@400;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+#updateUserRole{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c7f9cc;
+
+    >h2{
+        font-size: 2rem;
+        color: #006400;
+        margin:2rem ;
+    }
+
+    >form{
+        width: 400px;
+        border-radius: 10px;
+        box-shadow: 0 0 4px rgba(0,0,0,0.5);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #038503;
+        padding: 2rem 1rem;
+
+        >input[type="text"]{
+            margin: 1rem 0;
+            width: 90%;
+            height: 35px;
+            font-size: 1.2rem;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        >input[type="submit"]{
+            margin: 1rem 0;
+            width: 50%;
+            height: 30px;
+            font-size: 1.2rem;
+            background-color: #006400;
+            box-shadow: 4px 4px 8px #082a08;
+            color: white;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            padding: 5px;
+            &:hover{
+                background-color: #038f03;
+            }
+        }
+    }
+
+    >a{
+        width: 100px;
+        height: 30px;
+        background-color: #07a307;
+        border-radius: 10px;
+        box-shadow: 4px 4px 8px #006400;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem;
+        color: black;
+    }
+}
